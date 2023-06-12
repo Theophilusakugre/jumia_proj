@@ -9,3 +9,4 @@ For the following information:
 # Packages
 - Pandas
 - Selenium
+- Chromedriver
