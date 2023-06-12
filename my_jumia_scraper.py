@@ -10,7 +10,7 @@ from selenium import webdriver
 import pandas as pd
 import time
 
-chromedriver = "C:/Users/MTL9/chromedriver.exe"
+chromedriver = "C:/Users/MTL9/Downloads/chromedriver_win32 (2)/chromedriver.exe"
 
 driver=webdriver.Chrome(chromedriver)
 
@@ -48,6 +48,6 @@ driver.quit()
 
 #time.sleep(5)
 df=pd.DataFrame.from_dict({'name':name,'price':price,'old price':old_price,'rating':rating},orient='index')
-df.transpose()
+df.transpose(inplace=True)
 df.to_csv('jumia_details.csv',index=False)
 print(df)
